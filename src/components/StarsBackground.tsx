@@ -83,7 +83,7 @@ function StarsBackground({
   children,
   className,
   factor = 0.05,
-  speed = 50,
+  speed = 100,
   transition = { stiffness: 50, damping: 20 },
   starColor = '#fff',
   pointerEvents = true,
