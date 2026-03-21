@@ -1,14 +1,13 @@
 import { StarsBackground } from './components/StarsBackground';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
     <div className="relative w-full h-screen">
       <StarsBackground className="absolute inset-0" />
 
-      <div className="absolute inset-0 w-[30vw] mx-auto flex items-center justify-center border-solid border-2">
-        <button className="px-6 py-3 w-full bg-white text-black rounded-lg">
-          Click me
-        </button>
+      <div className="absolute px-6 inset-0 max-w-xl mx-auto flex justify-center border-solid border-2 border-red-500">
+        <Navigation />
       </div>
     </div>
   );
