@@ -2,7 +2,7 @@ import moonSvg from '../assets/moon.svg';
 
 export default function Navigation() {
   return (
-    <nav className="w-full h-8 mt-6 flex">
+    <nav className="w-full h-8 mt-6 flex mb-16">
       <p className="text-white font-mono font-bold text-2xl mr-auto">
         Ivan Dimitrov
       </p>
