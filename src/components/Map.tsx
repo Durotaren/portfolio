@@ -19,6 +19,9 @@ export default function Map() {
       map.setPaintProperty('background', 'background-color', '#2B2B2B');
       map.setPaintProperty('landcover', 'fill-color', '#262B1D');
       map.setPaintProperty('water', 'fill-color', '#213949');
+      map.setPaintProperty('roadname_sec', 'text-color', '#C2C2C2');
+      map.setLayoutProperty('roadname_sec', 'text-size', 14);
+      map.setLayoutProperty('poi_park', 'text-size', 12);
 
       const coords = [25.389176004399275, 42.62205080143139];
 
