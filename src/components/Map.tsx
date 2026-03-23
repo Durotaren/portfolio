@@ -104,8 +104,9 @@ export default function Map() {
   }, []);
 
   return (
-    <div className="w-full h-[192px] rounded-xl">
+    <div className="relative w-full h-[192px] rounded-xl">
       <div ref={mapContainer} className="w-full h-full rounded-xl" />
+      <div className="absolute bottom-0 left-0 w-full h-[20%] pointer-events-none bg-gradient-to-t from-black/100 to-transparent" />
     </div>
   );
 }
