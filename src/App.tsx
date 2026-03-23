@@ -6,7 +6,7 @@ function App() {
     <div className="relative w-full h-screen">
       <StarsBackground className="absolute inset-0" />
 
-      <div className="absolute px-6 inset-0 max-w-xl mx-auto flex justify-center border-solid border-2 border-red-500">
+      <div className="absolute px-6 inset-0 max-w-xl mx-auto flex justify-center">
         <Navigation />
       </div>
     </div>

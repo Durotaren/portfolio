@@ -2,18 +2,24 @@ import moonSvg from '../assets/moon.svg';
 
 export default function Navigation() {
   return (
-    <nav className="border-2 border-blue-500 w-full h-[32px] mt-6 flex">
+    <nav className="w-full h-8 mt-6 flex">
       <p className="text-white font-mono font-bold text-2xl mr-auto">
         Ivan Dimitrov
       </p>
-      {/* flex h-8 items-center rounded-md px-2 py-0.5 text-center text-md text-muted-foreground hover:text-primary/80 */}
-      <ul className="flex items-end text-blue-500 ">
-        <li className="px-2 py-0.5 text-muted">blog</li>
-        <li className="px-2 py-0.5 text-muted">projects</li>
-        <li className="px-2 py-0.5 text-muted">about</li>
+
+      <ul className="flex items-center text-gray-400 ">
+        <li className="px-2 py-0.5 hover:text-white hover:cursor-pointer trasition-colors duration-200">
+          projects
+        </li>
+        <li className="px-2 py-0.5 hover:text-white hover:cursor-pointer trasition-colors duration-200">
+          about
+        </li>
+        <li className="px-2 py-0.5 hover:text-white hover:cursor-pointer trasition-colors duration-200">
+          contacts
+        </li>
       </ul>
-      <li className="px-2 py-0.5 text-muted flex justify-center">
-        <img src={moonSvg} alt="" className="max-w-[24px]" />
+      <li className="px-2 py-0.5 flex justify-center items-center hover:cursor-pointer">
+        <img src={moonSvg} alt="" className="max-w-5" />
       </li>
     </nav>
   );
