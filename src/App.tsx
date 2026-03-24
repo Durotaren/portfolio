@@ -16,3 +16,14 @@ function App() {
 }
 
 export default App;
+
+// speed={speed} key={speed}
+// import { useState } from 'react';
+// const [speed, setSpeed] = useState(100);
+// <button
+//   onClick={() => {
+//     setSpeed(2);
+//   }}
+// >
+//   Clich ereere
+// </button>;

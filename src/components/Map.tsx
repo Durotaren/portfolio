@@ -93,7 +93,7 @@ export default function Map() {
 
       setTimeout(() => {
         map.easeTo({
-          zoom: 15,
+          zoom: 13,
           duration: 3500,
           easing: (t) => t * (2 - t),
         });
@@ -106,7 +106,7 @@ export default function Map() {
   return (
     <div className="relative w-full h-[192px] rounded-xl">
       <div ref={mapContainer} className="w-full h-full rounded-xl" />
-      <div className="absolute bottom-0 left-0 w-full h-[20%] pointer-events-none bg-gradient-to-t from-black/100 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-[20%] pointer-events-none bg-gradient-to-t from-[#131313] to-transparent" />
     </div>
   );
 }
