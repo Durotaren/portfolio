@@ -2,6 +2,7 @@ import { StarsBackground } from './components/StarsBackground';
 import Navigation from './components/Navigation';
 import Map from './components/Map';
 import Introduction from './components/Introduction';
+import Skills from './components/Skills';
 import { useState } from 'react';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Navigation />
         <Map />
         <Introduction />
+        <Skills />
         <button
           className="text-white opacity-0"
           onClick={() => {
