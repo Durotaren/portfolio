@@ -2,6 +2,7 @@ import HtmlIcon from './icons/HtmlIcon';
 import TypeScriptIcon from './icons/TypeScript';
 import CssIcon from './icons/CssIcon';
 import TailwindIcon from './icons/TailwindIcon';
+import ReactIcon from './icons/ReactIcon';
 
 export default function Skills() {
   return (
@@ -10,7 +11,7 @@ export default function Skills() {
       <TypeScriptIcon />
       <CssIcon />
       <TailwindIcon />
-      <div className="w-full h-full bg-red-500">5</div>
+      <ReactIcon />
       <div className="w-full h-full bg-red-500">6</div>
       <div className="w-full h-full bg-red-500">7</div>
       <div className="w-full h-full bg-red-500">8</div>
