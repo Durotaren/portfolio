@@ -4,7 +4,7 @@ export default function TypeScriptIcon() {
       <svg
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-7 h-7 transition-transform duration-300 group-hover:-translate-y-1"
+        className="w-7 h-7 text-white transition-transform duration-300 group-hover:text-[#3178c6] group-hover:-translate-y-1"
       >
         <rect
           x="2"
@@ -12,7 +12,7 @@ export default function TypeScriptIcon() {
           width="28"
           height="28"
           rx="1.312"
-          fill="#ffffff"
+          fill="currentColor"
           className="transition-colors duration-300"
         />
 
@@ -24,14 +24,6 @@ export default function TypeScriptIcon() {
       </svg>
 
       <p className="text-white text-xs">TypeScript</p>
-
-      <style>
-        {`
-          .group:hover rect {
-            fill: #3178c6;
-          }
-        `}
-      </style>
     </div>
   );
 }
