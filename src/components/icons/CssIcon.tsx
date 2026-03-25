@@ -2,15 +2,10 @@ export default function CssIcon() {
   return (
     <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border-1 border-gray-400">
       <svg
-        className="w-6 h-6 text-white group-hover:text-blue-600 transition-transform duration-300 group-hover:-translate-y-1"
         fill="currentColor"
-        version="1.1"
+        viewBox="-1.5 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 512 512"
-        enable-background="new 0 0 512 512"
-        xmlSpace="preserve"
-        stroke="#ffffff"
+        className="w-6 h-6 text-white group-hover:text-blue-600 transition-transform duration-300 group-hover:-translate-y-1"
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
@@ -19,16 +14,7 @@ export default function CssIcon() {
           stroke-linejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
-          {' '}
-          <g id="c133de6af664cd4f011a55de6b001b19">
-            {' '}
-            <path
-              display="inline"
-              d="M483.111,0.501l-42.59,461.314l-184.524,49.684L71.47,461.815L28.889,0.501H483.111z M397.29,94.302 H255.831H111.866l6.885,55.708h137.08h7.7l-7.7,3.205l-132.07,55.006l4.38,54.453l127.69,0.414l68.438,0.217l-4.381,72.606 l-64.058,18.035v-0.057l-0.525,0.146l-61.864-15.617l-3.754-45.07h-0.205H132.1h-0.202l7.511,87.007l116.423,34.429v-0.062 l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z"
-            >
-              {' '}
-            </path>{' '}
-          </g>{' '}
+          <path d="m19.366 21.423 1.913-21.423h-21.279l.025.278 1.885 21.148.016.176 8.633 2.398h.136l8.653-2.4.016-.176zm-8.708-16.744h6.183l-.186 2.16-6.1 2.712.102.488h5.724l-.659 7.551-5.086 1.41-5.084-1.408-.32-3.616h2.093l.168 1.833.016.178 3.085.82h.133l3.051-.848.015-.177.288-3.386.023-.276h-9.047l-.19-2.173 6.309-2.701-.1-.49h-6.48l-.185-2.08h6.24z"></path>
         </g>
       </svg>
       <p className="text-white text-xs">CSS</p>
