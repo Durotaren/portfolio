@@ -20,9 +20,12 @@ export default function Introduction() {
         </div>
       </div>
       <p className="text-white font-normal font-sans font-size-4">
-        I’m a frontend-focused developer building modern web applications with
+        I’m a software developer with nearly 2 years of experience. I specialize
+        in building clean, responsive interfaces with a strong focus on user
+        experience and attention to detail.
+        {/* I’m a frontend-focused developer building modern web applications with
         React and TypeScript. I care deeply about clean code, performance, and
-        creating smooth user experiences.
+        creating smooth user experiences. */}
       </p>
     </div>
   );

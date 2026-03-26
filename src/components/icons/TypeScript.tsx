@@ -5,7 +5,7 @@ export default function TypeScriptIcon() {
         fill="currentColor"
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-7 h-7 text-white transition-transform duration-300 group-hover:text-[#2E78C8] group-hover:-translate-y-1"
+        className="w-7 h-7 text-white transition duration-300 group-hover:text-[#2E78C8] group-hover:-translate-y-1"
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g

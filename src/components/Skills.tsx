@@ -9,11 +9,11 @@ export default function Skills() {
   return (
     <div className="w-full h-[156px] my-6 grid grid-cols-4 grid-rows-2 gap-2">
       <HtmlIcon />
-      <TypeScriptIcon />
       <CssIcon />
+      <JavaScriptIcon />
+      <TypeScriptIcon />
       <TailwindIcon />
       <ReactIcon />
-      <JavaScriptIcon />
       <div className="w-full h-full bg-red-500">7</div>
       <div className="w-full h-full bg-red-500">8</div>
     </div>

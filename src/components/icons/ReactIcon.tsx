@@ -6,7 +6,7 @@ export default function ReactIcon() {
         viewBox="0 0 32 32"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-7 h-7 text-white group-hover:text-sky-300 transition-transform duration-300 group-hover:-translate-y-1"
+        className="w-7 h-7 text-white group-hover:text-sky-300 transition duration-300 group-hover:-translate-y-1"
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g

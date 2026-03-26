@@ -5,7 +5,7 @@ export default function CssIcon() {
         fill="currentColor"
         viewBox="-1.5 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-6 h-6 text-white group-hover:text-[#2E53E5] transition-transform duration-300 group-hover:-translate-y-1"
+        className="w-6 h-6 text-white group-hover:text-[#2E53E5] transition duration-300 group-hover:-translate-y-1"
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
