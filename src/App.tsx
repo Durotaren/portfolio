@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Map from './components/Map';
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
+import Interactivity from './components/Interactivity';
 import { useState } from 'react';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Map />
         <Introduction />
         <Skills />
+        <Interactivity />
         <button
           className="text-white opacity-0"
           onClick={() => {
