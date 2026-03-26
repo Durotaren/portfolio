@@ -5,6 +5,7 @@ import TailwindIcon from './icons/TailwindIcon';
 import ReactIcon from './icons/ReactIcon';
 import JavaScriptIcon from './icons/JavaScriptIcon';
 import ViteIcon from './icons/ViteIcon';
+import DockerIcon from './icons/DockerIcon';
 
 export default function Skills() {
   return (
@@ -16,7 +17,7 @@ export default function Skills() {
       <TailwindIcon />
       <ReactIcon />
       <ViteIcon />
-      <div className="w-full h-full bg-red-500">8</div>
+      <DockerIcon />
     </div>
   );
 }

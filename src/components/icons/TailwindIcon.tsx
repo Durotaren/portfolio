@@ -2,7 +2,7 @@ export default function TailwindIcon() {
   return (
     <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border border-gray-400">
       <svg
-        className="w-6 h-6 text-white group-hover:text-cyan-400 transition duration-300 group-hover:-translate-y-1"
+        className="w-7 h-7 text-white group-hover:text-cyan-400 transition duration-300 group-hover:-translate-y-1"
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
