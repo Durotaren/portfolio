@@ -1,6 +1,6 @@
 export default function JavaScriptIcon() {
   return (
-    <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border border-gray-400">
+    <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border border-gray-600">
       <svg
         fill="currentColor"
         viewBox="0 0 32 32"

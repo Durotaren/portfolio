@@ -14,8 +14,8 @@ export default function Skills() {
       <CssIcon />
       <JavaScriptIcon />
       <TypeScriptIcon />
-      <TailwindIcon />
       <ReactIcon />
+      <TailwindIcon />
       <ViteIcon />
       <DockerIcon />
     </div>

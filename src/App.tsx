@@ -4,12 +4,32 @@ import Map from './components/Map';
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
 import Interactivity from './components/Interactivity';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 function App() {
-  const [speed, setSpeed] = useState(7);
+  const [speed, setSpeed] = useState<number>(7);
+  const [position, setPosition] = useState<number>(7);
+  const [isDragging, setIsDragging] = useState<boolean>(false);
+  const sliderRef = useRef<HTMLDivElement | null>(null);
+
   return (
-    <div className="relative w-full h-screen">
+    <div
+      className={`relative w-full h-screen ${isDragging ? 'select-none' : ''}`}
+      onMouseMove={(e) => {
+        if (isDragging && sliderRef.current) {
+          const rect = sliderRef.current.getBoundingClientRect();
+          let newPos = ((e.clientX - rect.left) / rect.width) * 100; // 0-100%
+          newPos = Math.max(2.3, Math.min(97.7, newPos)); // clamp
+          console.log(newPos, rect.width);
+
+          setPosition(newPos);
+          setSpeed(newPos * 1.5);
+        }
+      }}
+      onMouseUp={() => {
+        setIsDragging(false);
+      }}
+    >
       <StarsBackground className="absolute inset-0" speed={speed} />
 
       <div className="absolute px-6 inset-0 max-w-xl mx-auto flex flex-col">
@@ -17,15 +37,11 @@ function App() {
         <Map />
         <Introduction />
         <Skills />
-        <Interactivity />
-        <button
-          className="text-white opacity-0"
-          onClick={() => {
-            setSpeed(Math.random() * 50);
-          }}
-        >
-          Click here
-        </button>
+        <Interactivity
+          position={position}
+          sliderRef={sliderRef}
+          setIsDragging={setIsDragging}
+        />
       </div>
     </div>
   );

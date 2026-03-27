@@ -1,6 +1,6 @@
 export default function CssIcon() {
   return (
-    <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border-1 border-gray-400">
+    <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border-1 border-gray-600">
       <svg
         fill="currentColor"
         viewBox="-1.5 0 24 24"
