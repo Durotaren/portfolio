@@ -1,4 +1,4 @@
-import profilePic from '../assets/batman.jpg';
+import profilePic from '../assets/profile-pic.jpg';
 
 export default function Introduction() {
   return (

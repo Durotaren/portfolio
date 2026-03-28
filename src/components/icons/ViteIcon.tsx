@@ -5,7 +5,7 @@ export default function ViteIcon() {
 
   return (
     <div
-      className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border border-gray-600"
+      className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border border-gray-800"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

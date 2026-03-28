@@ -13,6 +13,7 @@ export default function Map() {
       style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
       center: [25.389176004399275, 42.62205080143139],
       zoom: 4,
+      attributionControl: { compact: true },
     });
 
     map.on('load', () => {

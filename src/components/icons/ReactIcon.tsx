@@ -1,6 +1,6 @@
 export default function ReactIcon() {
   return (
-    <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border-1 border-gray-600">
+    <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border-1 border-gray-800">
       <svg
         fill="currentColor"
         viewBox="0 0 32 32"

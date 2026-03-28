@@ -1,6 +1,6 @@
 export default function HtmlIcon() {
   return (
-    <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border-1 border-gray-600">
+    <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border-1 border-gray-800">
       <svg
         className="w-6 h-6 text-white group-hover:text-orange-600 transition duration-300 group-hover:-translate-y-1"
         fill="currentColor"
