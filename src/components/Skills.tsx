@@ -9,7 +9,7 @@ import DockerIcon from './icons/DockerIcon';
 
 export default function Skills() {
   return (
-    <div className="w-full h-[156px] my-6 grid grid-cols-4 grid-rows-2 gap-2">
+    <div className="w-full min-h-[156px] my-6 grid grid-cols-4 grid-rows-2 gap-2">
       <HtmlIcon />
       <CssIcon />
       <JavaScriptIcon />

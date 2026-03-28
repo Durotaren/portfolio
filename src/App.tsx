@@ -18,8 +18,8 @@ function App() {
       onMouseMove={(e) => {
         if (isDragging && sliderRef.current) {
           const rect = sliderRef.current.getBoundingClientRect();
-          let newPos = ((e.clientX - rect.left) / rect.width) * 100; // 0-100%
-          newPos = Math.max(2.3, Math.min(97.7, newPos)); // clamp
+          let newPos = ((e.clientX - rect.left) / rect.width) * 100;
+          newPos = Math.max(2.3, Math.min(97.7, newPos));
           console.log(newPos, rect.width);
 
           setPosition(newPos);
