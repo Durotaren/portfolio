@@ -1,9 +1,6 @@
 import { StarsBackground } from './components/StarsBackground';
 import Navigation from './components/Navigation';
-import Map from './components/Map';
-import Introduction from './components/Introduction';
-import Skills from './components/Skills';
-import Interactivity from './components/Interactivity';
+import { Outlet } from 'react-router';
 import { useRef, useState } from 'react';
 
 function App() {
@@ -20,8 +17,6 @@ function App() {
           const rect = sliderRef.current.getBoundingClientRect();
           let newPos = ((e.clientX - rect.left) / rect.width) * 100;
           newPos = Math.max(2.3, Math.min(97.7, newPos));
-          console.log(newPos, rect.width);
-
           setPosition(newPos);
           setSpeed(newPos * 1.5);
         }
@@ -34,14 +29,7 @@ function App() {
 
       <div className="absolute px-6 inset-0 max-w-xl mx-auto flex flex-col">
         <Navigation />
-        <Map />
-        <Introduction />
-        <Skills />
-        <Interactivity
-          position={position}
-          sliderRef={sliderRef}
-          setIsDragging={setIsDragging}
-        />
+        <Outlet context={{ position, sliderRef, setIsDragging }} />
       </div>
     </div>
   );

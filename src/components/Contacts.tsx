@@ -1,7 +1,7 @@
 import githubSvg from '../assets/github.svg';
 import emailSvg from '../assets/email.svg';
 
-export default function RecentProjects() {
+export default function Contacts() {
   return (
     <div className="flex gap-2 mt-2">
       <div className="flex gap-2">
