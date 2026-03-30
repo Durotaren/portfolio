@@ -27,13 +27,13 @@ export default function Navigation() {
         >
           about
         </Link>
-        <Link
+        {/* <Link
           to={'/contacts'}
           className="px-2 py-0.5 hover:text-white hover:cursor-pointer transition-colors duration-200"
           viewTransition
         >
           contacts
-        </Link>
+        </Link> */}
       </ul>
       <li className="px-2 py-0.5 flex justify-center items-center hover:cursor-pointer">
         <img src={moonSvg} alt="" className="max-w-5" />
