@@ -16,6 +16,8 @@ export default function Map() {
       attributionControl: { compact: true },
     });
 
+    let isMounted: boolean = true;
+
     map.on('load', () => {
       map.setPaintProperty('background', 'background-color', '#2B2B2B');
       map.setPaintProperty('landcover', 'fill-color', '#262B1D');
@@ -65,6 +67,8 @@ export default function Map() {
       const delay = 1000;
 
       function animate(now: number) {
+        if (!isMounted) return; // ✅ STOP after unmount
+
         const cycle = duration + delay;
         const time = now % cycle;
 
@@ -73,6 +77,8 @@ export default function Map() {
 
           const radius = 6 + progress * 20;
           const opacity = 0.4 * (1 - progress);
+
+          if (!map.getLayer('dot-pulse')) return;
 
           map.setPaintProperty('dot-pulse', 'circle-radius', radius);
           map.setPaintProperty('dot-pulse', 'circle-opacity', opacity);
@@ -101,7 +107,10 @@ export default function Map() {
       }, 1500);
     });
 
-    return () => map.remove();
+    return () => {
+      isMounted = false;
+      map.remove();
+    };
   }, []);
 
   return (

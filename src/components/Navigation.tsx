@@ -14,14 +14,14 @@ export default function Navigation() {
 
       <ul className="flex items-center text-gray-400 ">
         <Link
-          to={'/contacts'}
+          to={'/projects'}
           className="px-2 py-0.5 hover:text-white hover:cursor-pointer transition-colors duration-200"
           viewTransition
         >
           projects
         </Link>
         <Link
-          to={'/contacts'}
+          to={'/about'}
           className="px-2 py-0.5 hover:text-white hover:cursor-pointer transition-colors duration-200"
           viewTransition
         >
