@@ -117,7 +117,7 @@ function StarsBackground({
 
   return (
     <div
-      className={cn('relative size-full overflow-hidden bg-black', className)}
+      className={cn('fixed size-full overflow-hidden bg-black', className)}
       onMouseMove={handleMouseMove}
       {...props}
     >
