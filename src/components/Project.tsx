@@ -18,7 +18,13 @@ export default function Project({
     <div className="flex flex-col gap-2">
       <div className="w-full group overflow-hidden">
         <div
-          className={`relative bg-gradient-to-t from-[#080707] to-[#202021] h-[340px] transition-colors duration-300 group-hover:bg-gradient-to-t group-hover:from-[#0C0C0E] group-hover:to-[${gradientColor}] rounded-md`}
+          className={`relative bg-gradient-to-t from-[#080707] to-[#202021] h-[340px] transition-colors duration-300 rounded-md`}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.backgroundImage = `linear-gradient(to top, #0C0C0E, ${gradientColor})`)
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.backgroundImage = `linear-gradient(to top, #080707, #202021)`)
+          }
         >
           <img
             className="aboluste w-full h-[350px] translate-y-5 group-hover:translate-y-3 transition-translate duration-600"
@@ -29,7 +35,11 @@ export default function Project({
       <p className="text-white text-lg mt-1">{name}</p>
       <p className="text-[#a3a3a3] text-sm">{description}</p>
       <div className="flex gap-4">
-        <div className="flex justify-center items-center gap-2 border-2 border-white px-[16px] py-[8px] rounded-md hover:bg-[#262626] transition-colors cursor-pointer">
+        <a
+          className="flex justify-center items-center gap-2 border-2 border-white px-[16px] py-[8px] rounded-md hover:bg-[#262626] transition-colors cursor-pointer text-white noopener noreferrer"
+          href={githubLink}
+          target="_blank"
+        >
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
@@ -38,15 +48,13 @@ export default function Project({
           >
             <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.112.82-.258.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.746.083-.73.083-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.774.418-1.305.762-1.604-2.665-.3-5.466-1.333-5.466-5.931 0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.84 1.236 1.911 1.236 3.221 0 4.61-2.804 5.628-5.476 5.922.43.37.813 1.103.813 2.222 0 1.606-.014 2.898-.014 3.293 0 .32.216.694.825.576C20.565 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
           </svg>
-          <a
-            href={githubLink}
-            target="_blank"
-            className="text-white noopener noreferrer"
-          >
-            Source
-          </a>
-        </div>
-        <div className="flex justify-center items-center gap-2 bg-white rounded-md hover:bg-[#E2E2E2] transition-colors px-[20px] py-[8px] cursor-pointer">
+          Source
+        </a>
+        <a
+          className="flex justify-center items-center gap-2 bg-white rounded-md hover:bg-[#E2E2E2] transition-colors px-[20px] py-[8px] cursor-pointer text-black noopener noreferrer"
+          href={liveDemoLink}
+          target="_blank"
+        >
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -85,15 +93,11 @@ export default function Project({
               </defs>{' '}
             </g>
           </svg>
-          <a
-            href={liveDemoLink}
-            target="_blank"
-            className="text-black noopener noreferrer"
-          >
-            Visit
-          </a>
-        </div>
+          Visit
+        </a>
       </div>
     </div>
   );
 }
+
+// group-hover:bg-gradient-to-t group-hover:from-[#0C0C0E] group-hover:to-[${gradientColor}]
