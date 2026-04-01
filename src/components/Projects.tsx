@@ -2,12 +2,13 @@ import Project from './Project';
 import portfolio from '../assets/portfolio.png';
 import memoryCard from '../assets/memoryCard.png';
 import cv from '../assets/cv.png';
+import weather from '../assets/weather.png';
 
 export default function Projects() {
   return (
     <div className="flex flex-col gap-8">
       <div className="text-white text-2xl">My Projects</div>
-      <div className="flex flex-col gap-20 mb-20">
+      <div className="flex flex-col gap-18 mb-18">
         <Project
           name="Portfolio"
           description="A custom site built with React, Tailwind and Motion to showcase my experience."
@@ -31,6 +32,14 @@ export default function Projects() {
           liveDemoLink="https://next-cv-app.vercel.app"
           image={cv}
           gradientColor="#483B55"
+        />
+        <Project
+          name="Weather App"
+          description="Real-time weather forecasts with dynamic icons, 5-day outlook, hourly updates, and recent search widgets for any city worldwide."
+          githubLink="https://github.com/Durotaren/weather-app"
+          liveDemoLink="https://durotaren.github.io/weather-app/"
+          image={weather}
+          gradientColor="#523D27"
         />
       </div>
     </div>

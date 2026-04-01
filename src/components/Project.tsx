@@ -18,23 +18,23 @@ export default function Project({
     <div className="flex flex-col gap-2">
       <div className="w-full group overflow-hidden">
         <div
-          className={`relative bg-gradient-to-t from-[#080707] to-[#202021] h-[340px] transition-colors duration-300 rounded-md`}
+          className={`relative bg-gradient-to-t from-[#111010] to-[#202021] h-[335px] transition-colors duration-300 rounded-md`}
           onMouseEnter={(e) =>
             (e.currentTarget.style.backgroundImage = `linear-gradient(to top, #0C0C0E, ${gradientColor})`)
           }
           onMouseLeave={(e) =>
-            (e.currentTarget.style.backgroundImage = `linear-gradient(to top, #080707, #202021)`)
+            (e.currentTarget.style.backgroundImage = `linear-gradient(to top, #111010, #202021)`)
           }
         >
           <img
-            className="aboluste w-full h-[350px] translate-y-5 group-hover:translate-y-3 transition-translate duration-600"
+            className="aboluste w-full h-[350px] translate-y-5 group-hover:translate-y-2 transition-translate duration-600"
             src={image}
           ></img>
         </div>
       </div>
       <p className="text-white text-lg mt-1">{name}</p>
       <p className="text-[#a3a3a3] text-sm">{description}</p>
-      <div className="flex gap-4">
+      <div className="flex gap-4 pt-1">
         <a
           className="flex justify-center items-center gap-2 border-2 border-white px-[16px] py-[8px] rounded-md hover:bg-[#262626] transition-colors cursor-pointer text-white noopener noreferrer"
           href={githubLink}
