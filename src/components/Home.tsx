@@ -22,8 +22,16 @@ const container = {
 };
 
 const item = {
-  hidden: { opacity: 0, y: 5 },
-  show: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring' as const,
+      stiffness: 120,
+      damping: 15,
+    },
+  },
 };
 
 export default function Home({
