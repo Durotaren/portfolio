@@ -67,7 +67,7 @@ export default function Map() {
       const delay = 1000;
 
       function animate(now: number) {
-        if (!isMounted) return; // ✅ STOP after unmount
+        if (!isMounted) return;
 
         const cycle = duration + delay;
         const time = now % cycle;

@@ -99,5 +99,3 @@ export default function Project({
     </div>
   );
 }
-
-// group-hover:bg-gradient-to-t group-hover:from-[#0C0C0E] group-hover:to-[${gradientColor}]

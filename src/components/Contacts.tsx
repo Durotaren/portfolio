@@ -2,7 +2,23 @@ import resume from '../assets/files/Ivan-Resume.pdf';
 
 export default function Contacts() {
   return (
-    <div className="flex gap-2 mt-2">
+    <div className="flex flex-col gap-4 border-gray-600 rounded-md">
+      <p className="text-white text-2xl">About me</p>
+
+      <p className="text-white text-lg border-gray-600 rounded-md">
+        I’m a web developer focused on building clean, responsive, and
+        high-performing web applications. I’ve committed myself to consistent
+        daily practice, turning ideas into real, functional projects.
+      </p>
+
+      <p className="text-white text-lg border-gray-600 border1 rounded-md">
+        I approach development with a problem-solving mindset and strong
+        attention to detail, always aiming to write clear, maintainable code.
+        I’m a fast learner who quickly adapts to new tools and concepts, and I’m
+        currently expanding my skills toward full-stack development while
+        working on projects that reflect real-world use cases.
+      </p>
+
       <div className="flex flex-col gap-2">
         <div className="flex items-center group cursor-pointer p-[2px] gap-3  ">
           <svg
