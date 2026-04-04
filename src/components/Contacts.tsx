@@ -3,15 +3,15 @@ import resume from '../assets/files/Ivan-Resume.pdf';
 export default function Contacts() {
   return (
     <div className="flex flex-col gap-4 border-gray-600 rounded-md">
-      <p className="text-white text-2xl">About me</p>
+      <p className="dark:text-white text-black text-2xl">About me</p>
 
-      <p className="text-white text-lg border-gray-600 rounded-md">
+      <p className="dark:text-white text-black text-lg border-gray-600 rounded-md">
         I’m a web developer focused on building clean, responsive, and
         high-performing web applications. I’ve committed myself to consistent
         daily practice, turning ideas into real, functional projects.
       </p>
 
-      <p className="text-white text-lg border-gray-600 border1 rounded-md">
+      <p className="dark:text-white text-black text-lg border-gray-600 rounded-md">
         I approach development with a problem-solving mindset and strong
         attention to detail, always aiming to write clear, maintainable code.
         I’m a fast learner who quickly adapts to new tools and concepts, and I’m
@@ -23,7 +23,7 @@ export default function Contacts() {
         <div className="flex items-center group cursor-pointer p-[2px] gap-3  ">
           <svg
             viewBox="0 0 512 512"
-            className="w-8 h-8 text-[#a3a3a3] group-hover:text-white transition-colors duration-100"
+            className="w-8 h-8 text-[#a3a3a3] dark:group-hover:text-white group-hover:text-black transition-colors duration-100"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -45,7 +45,7 @@ export default function Contacts() {
           </svg>
           <a
             href="mailto:ivan.dimitrov1567@gmail.com"
-            className="text-[#a3a3a3] group-hover:text-white transition-colors duration-100"
+            className="text-[#a3a3a3] dark:group-hover:text-white group-hover:text-black transition-colors duration-100"
           >
             Send me an email
           </a>
@@ -55,7 +55,7 @@ export default function Contacts() {
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-8 h-8 text-[#a3a3a3] group-hover:text-white transition-colors duration-100"
+            className="w-8 h-8 text-[#a3a3a3] dark:group-hover:text-white group-hover:text-black transition-colors duration-100"
           >
             <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.112.82-.258.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.746.083-.73.083-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.774.418-1.305.762-1.604-2.665-.3-5.466-1.333-5.466-5.931 0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.84 1.236 1.911 1.236 3.221 0 4.61-2.804 5.628-5.476 5.922.43.37.813 1.103.813 2.222 0 1.606-.014 2.898-.014 3.293 0 .32.216.694.825.576C20.565 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
           </svg>
@@ -63,7 +63,7 @@ export default function Contacts() {
             href="https://github.com/Durotaren"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#a3a3a3] group-hover:text-white transition-colors duration-100"
+            className="text-[#a3a3a3] dark:group-hover:text-white group-hover:text-black transition-colors duration-100"
           >
             Github
           </a>
@@ -76,7 +76,7 @@ export default function Contacts() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 45.057 45.057"
             xmlSpace="preserve"
-            className="w-8 h-8 text-[#a3a3a3] group-hover:text-white transition-colors duration-100"
+            className="w-8 h-8 text-[#a3a3a3] dark:group-hover:text-white group-hover:text-black transition-colors duration-100"
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
@@ -103,7 +103,7 @@ export default function Contacts() {
           <a
             href={resume}
             download="My_Resume.pdf"
-            className="text-[#a3a3a3] group-hover:text-white transition-colors duration-100"
+            className="text-[#a3a3a3] dark:group-hover:text-white group-hover:text-black transition-colors duration-100"
           >
             Download my Resume
           </a>
