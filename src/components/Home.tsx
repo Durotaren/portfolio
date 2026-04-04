@@ -9,6 +9,7 @@ interface HomeProps {
   position: number;
   sliderRef: RefObject<HTMLDivElement>;
   setIsDragging: React.Dispatch<React.SetStateAction<boolean>>;
+  dark: boolean;
 }
 
 const container = {
@@ -38,6 +39,7 @@ export default function Home({
   position,
   sliderRef,
   setIsDragging,
+  dark,
 }: HomeProps) {
   return (
     <motion.div
@@ -55,7 +57,7 @@ export default function Home({
       </motion.div>
 
       <motion.div variants={item}>
-        <Skills />
+        <Skills dark={dark} />
       </motion.div>
 
       <motion.div variants={item}>

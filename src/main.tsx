@@ -27,16 +27,18 @@ const router = createBrowserRouter([
 ]);
 
 function HomeWrapper() {
-  const { position, sliderRef, setIsDragging } = useOutletContext<{
+  const { position, sliderRef, setIsDragging, dark } = useOutletContext<{
     position: number;
     sliderRef: React.RefObject<HTMLDivElement>;
     setIsDragging: React.Dispatch<React.SetStateAction<boolean>>;
+    dark: boolean;
   }>();
   return (
     <Home
       position={position}
       sliderRef={sliderRef}
       setIsDragging={setIsDragging}
+      dark={dark}
     />
   );
 }

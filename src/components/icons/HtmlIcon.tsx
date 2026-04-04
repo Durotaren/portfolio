@@ -2,7 +2,7 @@ export default function HtmlIcon() {
   return (
     <div className="w-full h-full rounded-lg group flex flex-col gap-2 items-center justify-center border-1 border-gray-800">
       <svg
-        className="w-6 h-6 text-white group-hover:text-orange-600 transition duration-300 group-hover:-translate-y-1"
+        className="w-6 h-6 dark:text-white text-black group-hover:text-orange-600 transition duration-300 group-hover:-translate-y-1"
         fill="currentColor"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ export default function HtmlIcon() {
           </g>
         </g>
       </svg>
-      <p className="text-white text-xs">HTML</p>
+      <p className="dark:text-white text-black text-xs">HTML</p>
     </div>
   );
 }

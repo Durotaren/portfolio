@@ -7,7 +7,7 @@ import JavaScriptIcon from './icons/JavaScriptIcon';
 import ViteIcon from './icons/ViteIcon';
 import DockerIcon from './icons/DockerIcon';
 
-export default function Skills() {
+export default function Skills({ dark }: { dark: boolean }) {
   return (
     <div className="w-full min-h-[156px] my-6 grid grid-cols-4 grid-rows-2 gap-2">
       <HtmlIcon />
@@ -16,7 +16,7 @@ export default function Skills() {
       <TypeScriptIcon />
       <ReactIcon />
       <TailwindIcon />
-      <ViteIcon />
+      <ViteIcon dark={dark} />
       <DockerIcon />
     </div>
   );

@@ -5,7 +5,7 @@ export default function CssIcon() {
         fill="currentColor"
         viewBox="-1.5 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-6 h-6 text-white group-hover:text-[#2E53E5] transition duration-300 group-hover:-translate-y-1"
+        className="w-6 h-6 dark:text-white text-black group-hover:text-[#2E53E5] transition duration-300 group-hover:-translate-y-1"
       >
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
@@ -17,7 +17,7 @@ export default function CssIcon() {
           <path d="m19.366 21.423 1.913-21.423h-21.279l.025.278 1.885 21.148.016.176 8.633 2.398h.136l8.653-2.4.016-.176zm-8.708-16.744h6.183l-.186 2.16-6.1 2.712.102.488h5.724l-.659 7.551-5.086 1.41-5.084-1.408-.32-3.616h2.093l.168 1.833.016.178 3.085.82h.133l3.051-.848.015-.177.288-3.386.023-.276h-9.047l-.19-2.173 6.309-2.701-.1-.49h-6.48l-.185-2.08h6.24z"></path>
         </g>
       </svg>
-      <p className="text-white text-xs">CSS</p>
+      <p className="dark:text-white text-black text-xs">CSS</p>
     </div>
   );
 }

@@ -34,7 +34,7 @@ function App() {
 
       <div className="absolute px-6 inset-0 max-w-xl mx-auto flex flex-col">
         <Navigation dark={dark} setDark={setDark} />
-        <Outlet context={{ position, sliderRef, setIsDragging }} />
+        <Outlet context={{ position, sliderRef, setIsDragging, dark }} />
       </div>
     </div>
   );

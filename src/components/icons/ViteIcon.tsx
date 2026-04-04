@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function ViteIcon() {
+export default function ViteIcon({ dark }: { dark: boolean }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -28,12 +28,12 @@ export default function ViteIcon() {
           >
             <stop
               offset="0"
-              stopColor={hovered ? '#41D1FF' : '#ffffff'}
+              stopColor={hovered ? '#41D1FF' : dark ? '#ffffff' : '#000000'}
               style={{ transition: 'stop-color 0.3s ease' }}
             />
             <stop
               offset="1"
-              stopColor={hovered ? '#BD34FE' : '#ffffff'}
+              stopColor={hovered ? '#BD34FE' : dark ? '#ffffff' : '#000000'}
               style={{ transition: 'stop-color 0.3s ease' }}
             />
           </linearGradient>
@@ -49,17 +49,17 @@ export default function ViteIcon() {
           >
             <stop
               offset="0"
-              stopColor={hovered ? '#FFEA83' : '#ffffff'}
+              stopColor={hovered ? '#FFEA83' : dark ? '#ffffff' : '#000000'}
               style={{ transition: 'stop-color 0.3s ease' }}
             />
             <stop
               offset="0.0833"
-              stopColor={hovered ? '#FFDD35' : '#ffffff'}
+              stopColor={hovered ? '#FFDD35' : dark ? '#ffffff' : '#000000'}
               style={{ transition: 'stop-color 0.3s ease' }}
             />
             <stop
               offset="1"
-              stopColor={hovered ? '#FFA800' : '#ffffff'}
+              stopColor={hovered ? '#FFA800' : dark ? '#ffffff' : '#000000'}
               style={{ transition: 'stop-color 0.3s ease' }}
             />
           </linearGradient>
@@ -76,7 +76,7 @@ export default function ViteIcon() {
         />
       </svg>
 
-      <p className="text-white text-xs">Vite</p>
+      <p className="dark:text-white text-black text-xs">Vite</p>
     </div>
   );
 }
