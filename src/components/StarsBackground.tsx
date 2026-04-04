@@ -94,6 +94,7 @@ function StarsBackground({
   className,
   factor = 0.05,
   speed = 10,
+
   transition = { stiffness: 50, damping: 20 },
   starColor = '#fff',
   pointerEvents = true,
@@ -117,7 +118,10 @@ function StarsBackground({
 
   return (
     <div
-      className={cn('fixed size-full overflow-hidden bg-black', className)}
+      className={cn(
+        'fixed size-full overflow-hidden bg-white dark:bg-black',
+        className,
+      )}
       onMouseMove={handleMouseMove}
       {...props}
     >

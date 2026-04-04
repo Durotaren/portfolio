@@ -8,6 +8,7 @@ function App() {
   const [position, setPosition] = useState<number>(7);
   const [isDragging, setIsDragging] = useState<boolean>(false);
   const sliderRef = useRef<HTMLDivElement | null>(null);
+  const [dark, setDark] = useState(true);
 
   return (
     <div
@@ -25,10 +26,14 @@ function App() {
         setIsDragging(false);
       }}
     >
-      <StarsBackground className="absolute inset-0" speed={speed} />
+      <StarsBackground
+        className="absolute inset-0"
+        starColor={dark ? '#fff' : '#000'}
+        speed={speed}
+      />
 
       <div className="absolute px-6 inset-0 max-w-xl mx-auto flex flex-col">
-        <Navigation />
+        <Navigation dark={dark} setDark={setDark} />
         <Outlet context={{ position, sliderRef, setIsDragging }} />
       </div>
     </div>
