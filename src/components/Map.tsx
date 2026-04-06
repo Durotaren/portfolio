@@ -116,7 +116,7 @@ export default function Map() {
   return (
     <div className="relative w-full h-[192px] rounded-xl mb-1">
       <div ref={mapContainer} className="w-full h-full rounded-xl" />
-      <div className="absolute bottom-0 left-0 w-full h-[30%] pointer-events-none bg-gradient-to-t from-[#000000] to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-[30%] pointer-events-none bg-gradient-to-t dark:from-[#000000] to-transparent" />
     </div>
   );
 }
