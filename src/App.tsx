@@ -27,7 +27,7 @@ function App() {
       }}
     >
       <StarsBackground
-        className="absolute inset-0"
+        className={`absolute inset-0 ${dark ? 'bg-color-black' : 'bg-color-white'}`}
         starColor={dark ? '#fff' : '#000'}
         speed={speed}
       />
