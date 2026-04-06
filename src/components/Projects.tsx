@@ -36,7 +36,10 @@ export default function Projects() {
       initial="hidden"
       animate="show"
     >
-      <motion.div variants={item} className="text-white text-2xl">
+      <motion.div
+        variants={item}
+        className="dark:text-white text-black text-2xl"
+      >
         My Projects
       </motion.div>
       <motion.div variants={item} className="flex flex-col gap-18 mb-10">
