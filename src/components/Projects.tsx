@@ -4,6 +4,11 @@ import portfolio from '../assets/portfolio.png';
 import memoryCard from '../assets/memoryCard.png';
 import cv from '../assets/cv.png';
 import weather from '../assets/weather.png';
+import { useOutletContext } from 'react-router';
+
+type ContextType = {
+  dark: boolean;
+};
 
 const container = {
   hidden: {},
@@ -29,6 +34,8 @@ const item = {
 };
 
 export default function Projects() {
+  const { dark } = useOutletContext<ContextType>();
+
   return (
     <motion.div
       className="flex flex-col gap-8"
@@ -50,7 +57,7 @@ export default function Projects() {
             githubLink="https://github.com/Durotaren/portfolio"
             liveDemoLink="something"
             image={portfolio}
-            gradientColor="#2F4051"
+            gradientColor={dark ? '#2F4051' : '#AFD5FF'}
           />
         </motion.div>
         <motion.div variants={item}>
@@ -60,7 +67,7 @@ export default function Projects() {
             githubLink="https://github.com/Durotaren/memory-card"
             liveDemoLink="https://memory-card-rick-morty.vercel.app"
             image={memoryCard}
-            gradientColor="#2B4D37"
+            gradientColor={dark ? '#2B4D37' : '#A5F3C0'}
           />
         </motion.div>
         <motion.div variants={item}>
@@ -70,7 +77,7 @@ export default function Projects() {
             githubLink="https://github.com/Durotaren/cv-application"
             liveDemoLink="https://next-cv-app.vercel.app"
             image={cv}
-            gradientColor="#483B55"
+            gradientColor={dark ? '#483B55' : '#EAD6FF'}
           />
         </motion.div>
         <motion.div variants={item}>
@@ -80,7 +87,7 @@ export default function Projects() {
             githubLink="https://github.com/Durotaren/weather-app"
             liveDemoLink="https://durotaren.github.io/weather-app/"
             image={weather}
-            gradientColor="#523D27"
+            gradientColor={dark ? '#523D27' : '#FFCD98'}
           />
         </motion.div>
       </motion.div>
