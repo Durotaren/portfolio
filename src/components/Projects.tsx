@@ -58,6 +58,7 @@ export default function Projects() {
             liveDemoLink="something"
             image={portfolio}
             gradientColor={dark ? '#2F4051' : '#AFD5FF'}
+            dark={dark}
           />
         </motion.div>
         <motion.div variants={item}>
@@ -68,6 +69,7 @@ export default function Projects() {
             liveDemoLink="https://memory-card-rick-morty.vercel.app"
             image={memoryCard}
             gradientColor={dark ? '#2B4D37' : '#A5F3C0'}
+            dark={dark}
           />
         </motion.div>
         <motion.div variants={item}>
@@ -78,6 +80,7 @@ export default function Projects() {
             liveDemoLink="https://next-cv-app.vercel.app"
             image={cv}
             gradientColor={dark ? '#483B55' : '#EAD6FF'}
+            dark={dark}
           />
         </motion.div>
         <motion.div variants={item}>
@@ -88,6 +91,7 @@ export default function Projects() {
             liveDemoLink="https://durotaren.github.io/weather-app/"
             image={weather}
             gradientColor={dark ? '#523D27' : '#FFCD98'}
+            dark={dark}
           />
         </motion.div>
       </motion.div>

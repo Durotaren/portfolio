@@ -1,3 +1,4 @@
+import { useState } from 'react';
 interface ProjectProps {
   name: string;
   description: string;
@@ -5,7 +6,9 @@ interface ProjectProps {
   liveDemoLink: string;
   image: string;
   gradientColor: string;
+  dark: boolean;
 }
+
 export default function Project({
   name,
   description,
@@ -13,21 +16,31 @@ export default function Project({
   liveDemoLink,
   image,
   gradientColor,
+  dark,
 }: ProjectProps) {
+  const [hovered, setHovered] = useState(false);
+
+  const bgGradient = hovered
+    ? dark
+      ? `linear-gradient(to top, #0C0C0E, ${gradientColor})`
+      : `linear-gradient(to top, #F9F9F9, ${gradientColor})`
+    : dark
+      ? 'linear-gradient(to top, #111010, #202021)'
+      : 'linear-gradient(to top, #F8F9FA, #E4E3E6)';
+
   return (
     <div className="flex flex-col gap-2">
-      <div className="w-full group overflow-hidden">
+      <div
+        className="w-full overflow-hidden group"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
         <div
-          className={`relative bg-gradient-to-t from-[#111010] to-[#202021] h-[335px] transition-colors duration-300 rounded-md`}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.backgroundImage = `linear-gradient(to top, #0C0C0E, ${gradientColor})`)
-          }
-          onMouseLeave={(e) =>
-            (e.currentTarget.style.backgroundImage = `linear-gradient(to top, #111010, #202021)`)
-          }
+          style={{ backgroundImage: bgGradient }}
+          className="relative h-[335px] transition-all duration-300 rounded-md"
         >
           <img
-            className="aboluste w-full h-[350px] translate-y-4 group-hover:translate-y-0 transition-translate duration-600"
+            className="aboluste w-full h-[350px] translate-y-4 group-hover:translate-y-1 transition-translate duration-600"
             src={image}
           ></img>
         </div>
