@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
+import clickSound from '../assets/sounds/click.mp3';
 
 interface NavigationProps {
   dark: boolean;
@@ -7,6 +8,8 @@ interface NavigationProps {
 }
 
 export default function Navigation({ dark, setDark }: NavigationProps) {
+  const audioRef = useRef(new Audio(clickSound));
+
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark);
   }, [dark]);
@@ -41,6 +44,9 @@ export default function Navigation({ dark, setDark }: NavigationProps) {
         className="px-2 py-0.5 flex justify-center items-center hover:cursor-pointer"
         onClick={() => {
           setDark((prev) => !prev);
+          audioRef.current.currentTime = 0;
+          audioRef.current.volume = 0.3;
+          audioRef.current.play();
         }}
       >
         <svg
