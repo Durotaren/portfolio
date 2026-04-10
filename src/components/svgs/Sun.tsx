@@ -1,8 +1,8 @@
-interface SunProps {
+export interface SvgProps {
   dark: boolean;
 }
 
-export default function Sun({ dark }: SunProps) {
+export default function Sun({ dark }: SvgProps) {
   return (
     <svg
       viewBox="0 0 24 24"
