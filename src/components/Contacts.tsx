@@ -1,25 +1,57 @@
 import resume from '../assets/files/Ivan-Resume.pdf';
+import { motion } from 'framer-motion';
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring' as const,
+      stiffness: 120,
+      damping: 14,
+    },
+  },
+};
 
 export default function Contacts() {
   return (
-    <div className="flex flex-col gap-4 border-gray-600 rounded-md">
-      <p className="dark:text-white text-black text-2xl">About me</p>
+    <motion.div
+      variants={container}
+      className="flex flex-col gap-4 border-gray-600 rounded-md"
+      initial="hidden"
+      animate="show"
+    >
+      <motion.div variants={item}>
+        <p className="dark:text-white text-black text-2xl">About me</p>
+      </motion.div>
 
-      <p className="dark:text-white text-black text-lg border-gray-600 rounded-md">
-        I’m a web developer focused on building clean, responsive, and
-        high-performing web applications. I’ve committed myself to consistent
-        daily practice, turning ideas into real, functional projects.
-      </p>
+      <motion.div variants={item}>
+        <p className="dark:text-white text-black text-lg border-gray-600 rounded-md">
+          I’m a web developer focused on building clean, responsive, and
+          high-performing web applications. I’ve committed myself to consistent
+          daily practice, turning ideas into real, functional projects.
+        </p>
+        <p className="dark:text-white text-black text-lg border-gray-600 rounded-md">
+          I approach development with a problem-solving mindset and strong
+          attention to detail, always aiming to write clear, maintainable code.
+          I’m a fast learner who quickly adapts to new tools and concepts, and
+          I’m currently expanding my skills toward full-stack development while
+          working on projects that reflect real-world use cases.
+        </p>
+      </motion.div>
 
-      <p className="dark:text-white text-black text-lg border-gray-600 rounded-md">
-        I approach development with a problem-solving mindset and strong
-        attention to detail, always aiming to write clear, maintainable code.
-        I’m a fast learner who quickly adapts to new tools and concepts, and I’m
-        currently expanding my skills toward full-stack development while
-        working on projects that reflect real-world use cases.
-      </p>
-
-      <div className="flex flex-col gap-2">
+      <motion.div variants={item} className="flex flex-col gap-2">
         <div className="flex items-center group cursor-pointer p-[2px] gap-3  ">
           <svg
             viewBox="0 0 512 512"
@@ -108,7 +140,7 @@ export default function Contacts() {
             Download my Resume
           </a>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

@@ -100,7 +100,7 @@ export default function Map() {
 
       setTimeout(() => {
         map.easeTo({
-          zoom: 13,
+          zoom: 13.2,
           duration: 3500,
           easing: (t) => t * (2 - t),
         });
