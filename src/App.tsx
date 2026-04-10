@@ -1,14 +1,26 @@
 import { StarsBackground } from './components/StarsBackground';
 import Navigation from './components/Navigation';
 import { Outlet } from 'react-router';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function App() {
   const [speed, setSpeed] = useState<number>(7);
   const [position, setPosition] = useState<number>(7);
   const [isDragging, setIsDragging] = useState<boolean>(false);
   const sliderRef = useRef<HTMLDivElement | null>(null);
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(() => {
+    const saved = localStorage.getItem('theme');
+
+    if (saved === null) {
+      return true;
+    }
+
+    return JSON.parse(saved);
+  });
+
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(dark));
+  }, [dark]);
 
   return (
     <div
