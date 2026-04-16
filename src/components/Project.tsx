@@ -113,6 +113,3 @@ export default function Project({
     </div>
   );
 }
-// `linear-gradient(to top, #F9F9F9, ${gradientColor})`;
-// #E4E3E6;
-// #F8F9FA;
