@@ -1,4 +1,4 @@
-import resume from '../assets/files/Ivan-Resume.pdf';
+import resume from '../../public/Ivan-Resume.pdf';
 import { motion } from 'framer-motion';
 
 const container = {
@@ -134,7 +134,7 @@ export default function Contacts() {
           </svg>
           <a
             href={resume}
-            download="My_Resume.pdf"
+            download="Ivan-Resume.pdf"
             className="text-[#a3a3a3] dark:group-hover:text-white group-hover:text-black transition-colors duration-100"
           >
             Download my Resume
