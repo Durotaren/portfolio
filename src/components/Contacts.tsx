@@ -1,4 +1,4 @@
-import resume from '../../public/Ivan-Resume.pdf';
+import resume from '../assets/files/Ivan-Resume.pdf';
 import { motion } from 'framer-motion';
 
 const container = {
