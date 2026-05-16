@@ -36,7 +36,7 @@ export default function Interactivity({
         <div
           className="w-6 h-6 dark:bg-white bg-black absolute rounded-full top-1/2 -translate-y-1/2 -translate-x-1/2 hover:cursor-pointer"
           style={{ left: `${position}%` }}
-          onMouseDown={() => {
+          onPointerDown={() => {
             setIsDragging(true);
           }}
         ></div>

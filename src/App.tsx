@@ -25,7 +25,7 @@ function App() {
   return (
     <div
       className={`relative w-full h-screen ${isDragging ? 'select-none' : ''}`}
-      onMouseMove={(e) => {
+      onPointerMove={(e) => {
         if (isDragging && sliderRef.current) {
           const rect = sliderRef.current.getBoundingClientRect();
           let newPos = ((e.clientX - rect.left) / rect.width) * 100;
@@ -34,7 +34,7 @@ function App() {
           setSpeed(newPos * 1.5);
         }
       }}
-      onMouseUp={() => {
+      onPointerUp={() => {
         setIsDragging(false);
       }}
     >
