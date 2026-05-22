@@ -55,7 +55,7 @@ export default function Projects() {
             name="Portfolio"
             description="A custom site built with React, Tailwind and Motion to showcase my experience."
             githubLink="https://github.com/Durotaren/portfolio"
-            liveDemoLink="something"
+            liveDemoLink="https://ivandimitrovcodes.vercel.app/"
             image={portfolio}
             gradientColor={dark ? '#2F4051' : '#AFD5FF'}
             dark={dark}

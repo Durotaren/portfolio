@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 import clickSound from '../assets/sounds/click.mp3';
 import Sun from './svgs/Sun';
