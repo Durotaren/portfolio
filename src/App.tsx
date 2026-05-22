@@ -34,7 +34,7 @@ function App() {
           setSpeed(newPos * 1.5);
         }
       }}
-      onPointerUp={() => {
+      onPointerCancel={() => {
         setIsDragging(false);
       }}
     >

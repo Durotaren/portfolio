@@ -25,7 +25,7 @@ export default function Interactivity({
       </div>
       <div
         ref={sliderRef}
-        className="w-full h-6 rounded-full bg-gray-500 relative mt-2"
+        className="w-full h-6 rounded-full bg-gray-500 relative mt-2 touch-none"
       >
         <div
           className="absolute bg-blue-400 h-6 rounded-full"
