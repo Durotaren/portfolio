@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import clickSound from '../assets/sounds/click.mp3';
 import Sun from './svgs/Sun';
@@ -20,10 +20,18 @@ export default function Navigation({ dark, setDark }: NavigationProps) {
     <nav className="w-full h-8 mt-6 flex items-center mb-16">
       <Link
         to={'/'}
-        className="text-black font-mono font-bold text-2xl mr-auto dark:text-white "
+        className="text-black font-mono font-bold text-2xl mr-auto dark:text-white max-[420px]:hidden"
         viewTransition
       >
         Ivan Dimitrov
+      </Link>
+
+      <Link
+        to={'/'}
+        className="text-black font-mono font-bold text-2xl mr-auto dark:text-white hidden max-[420px]:block"
+        viewTransition
+      >
+        ID
       </Link>
 
       <ul className="flex items-center text-gray-400 ">
