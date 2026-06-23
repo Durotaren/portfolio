@@ -2,6 +2,7 @@ import { StarsBackground } from './components/StarsBackground';
 import Navigation from './components/Navigation';
 import { Outlet } from 'react-router';
 import { useEffect, useRef, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [speed, setSpeed] = useState<number>(7);
@@ -48,6 +49,7 @@ function App() {
         <Navigation dark={dark} setDark={setDark} />
         <Outlet context={{ position, sliderRef, setIsDragging, dark }} />
       </div>
+      <Analytics />
     </div>
   );
 }
